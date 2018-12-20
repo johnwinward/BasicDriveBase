@@ -20,9 +20,10 @@ import org.usfirst.frc.team5401.robot.subsystems.ExampleSubsystem;
  * functions corresponding to each mode, as described in the TimedRobot
  * documentation. If you change the name of this class or the package after
  * creating this project, you must also update the build.properties file in the
- * project.
+ * project. 001060264
  */
 public class Robot extends TimedRobot {
+	public static DriveBase drivebase = new DriveBase();
 	public static ExampleSubsystem m_subsystem = new ExampleSubsystem();
 	public static OI m_oi;
 

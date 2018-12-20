@@ -13,8 +13,8 @@ import org.usfirst.frc.team5401.robot.Robot;
 /**
  * An example command.  You can replace me with your own command.
  */
-public class ExampleCommand extends Command {
-	public ExampleCommand() {
+public class XboxMove extends Command {
+	public XboxMove() {
 		// Use requires() here to declare subsystem dependencies
 		requires(Robot.m_subsystem);
 	}
