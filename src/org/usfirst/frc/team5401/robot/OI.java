@@ -14,10 +14,21 @@ import edu.wpi.first.wpilibj.Joystick;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-	Joystick driverController = new Joystick(RobotMap.DRIVER_CONTROLLER);
 	
-	public double axis(int input){
-		
+	public static final double leftStickDeadZone = 0; //change for dead zone
+	
+	public final Joystick leftStick = new Joystick(RobotMap.CONTROLLER_LEFT_STICK);
+	
+	public double axis(){
+		double raw = leftStick.getX();
+		if (raw <= leftStickDeadZone){
+			return 0.0;
+		}
+		else{
+			return raw;
+		}
+	}
+	public double trigger(){   //trigger method
 		
 	}
 }

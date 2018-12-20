@@ -20,6 +20,7 @@ public class RobotMap {
 	public static final int LEFT_MOTOR = 1; //change for correct port on RoboRio
 	public static final int RIGHT_MOTOR = 2;
 	
+	//Xbox Controllers
 	public static final int DRIVER_CONTROLLER = 0;
 	
 	//Buttons

@@ -15,18 +15,20 @@ import org.usfirst.frc.team5401.robot.Robot;
  */
 public class XboxMove extends Command {
 	public XboxMove() {
-		// Use requires() here to declare subsystem dependencies
 		requires(Robot.drivebase);
 	}
 
 	// Called just before this Command runs the first time
 	@Override
 	protected void initialize() {
+		
 	}
 
 	// Called repeatedly when this Command is scheduled to run
 	@Override
 	protected void execute() {
+		Robot.drivebase.drive(Robot.oi.axis(), Robot.oi.trigger());
+		
 	}
 
 	// Make this return true when this Command no longer needs to run execute()
