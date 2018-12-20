@@ -16,7 +16,7 @@ import org.usfirst.frc.team5401.robot.Robot;
 public class XboxMove extends Command {
 	public XboxMove() {
 		// Use requires() here to declare subsystem dependencies
-		requires(Robot.m_subsystem);
+		requires(Robot.drivebase);
 	}
 
 	// Called just before this Command runs the first time
