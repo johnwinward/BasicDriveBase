@@ -10,9 +10,10 @@ package org.usfirst.frc.team5401.robot.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc.team5401.robot.Robot;
 
-/**
- * An example command.  You can replace me with your own command.
- */
+import edu.wpi.first.wpilibj.GenericHID;
+import edu.wpi.first.wpilibj.GenericHID.Hand;
+
+
 public class XboxMove extends Command {
 	public XboxMove() {
 		requires(Robot.drivebase);
@@ -27,7 +28,7 @@ public class XboxMove extends Command {
 	// Called repeatedly when this Command is scheduled to run
 	@Override
 	protected void execute() {
-		Robot.drivebase.drive(Robot.oi.axis(), Robot.oi.trigger());
+		
 		
 	}
 

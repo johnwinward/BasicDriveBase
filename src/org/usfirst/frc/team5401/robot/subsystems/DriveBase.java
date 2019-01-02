@@ -10,13 +10,9 @@ package org.usfirst.frc.team5401.robot.subsystems;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import org.usfirst.frc.team5401.robot.RobotMap;
 import org.usfirst.frc.team5401.robot.commands.XboxMove;
-
-import edu.wpi.first.wpilibj.PWMSpeedController;
 import edu.wpi.first.wpilibj.VictorSP;
 
-/**
- * An example subsystem.  You can replace me with your own Subsystem.
- */
+
 public class DriveBase extends Subsystem {
 	
 	private VictorSP leftMotor;
@@ -40,6 +36,4 @@ public class DriveBase extends Subsystem {
 		leftMotor.set(0);
 		rightMotor.set(0);
 	}
-		// Set the default command for a subsystem here.
-		// setDefaultCommand(new MySpecialCommand());
 }

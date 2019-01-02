@@ -24,8 +24,8 @@ public class RobotMap {
 	public static final int DRIVER_CONTROLLER = 0;
 	
 	//Buttons
-	public static final int CONTROLLER_LEFT_STICK = 1;
-	public static final int CONTROLLER_RIGHT_TRIGGER = 2;
+//	public static final int CONTROLLER_LEFT_STICK = 1;
+//	public static final int CONTROLLER_RIGHT_TRIGGER = 2;
 	
 	
 
