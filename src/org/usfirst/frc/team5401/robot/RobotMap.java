@@ -23,6 +23,13 @@ public class RobotMap {
 	//Xbox Controllers
 	public static final int DRIVER_CONTROLLER = 0;
 	
+	//Constants
+	public static final double LEFT_STICK_THRESHOLD = 0.25;
+	
+	//Buttons
+	public static final int XBOX_BUTTON_L3 = 1;
+	
+	
 	//Buttons
 //	public static final int CONTROLLER_LEFT_STICK = 1;
 //	public static final int CONTROLLER_RIGHT_TRIGGER = 2;

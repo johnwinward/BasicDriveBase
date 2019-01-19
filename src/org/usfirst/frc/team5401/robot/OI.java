@@ -18,30 +18,11 @@ import edu.wpi.first.wpilibj.XboxController;
  */
 public class OI {
 	
-	public static final double leftStickThreshold = 0.25; //change for dead zone
-	public static final double rightTriggerDeadZone = 0; //trigger dead zone? not sure if needed
-	
-	public final XboxController driver = new XboxController(RobotMap.DRIVER_CONTROLLER);
+	public final Joystick xboxDriver = new Joystick(RobotMap.DRIVER_CONTROLLER);
 	//public final Joystick leftStick = new Joystick(RobotMap.CONTROLLER_LEFT_STICK);
 	//public final AnalogTrigger rightTrigger = new AnalogTrigger(RobotMap.CONTROLLER_RIGHT_TRIGGER);
 	
-	public double leftStickAxis(GenericHID.Hand kleft){
-		double raw = driver.getX();
-		if (Math.abs(raw) <= leftStickThreshold){
-			return 0.0;
-		}
-		else{
-			return raw; //might not be raw, might be 1 or -1
-		}
-	}
-	public double triggerAxis(GenericHID.Hand kright){
-		double triggerValue = driver.getTriggerAxis(kright);
-		if (triggerValue <= rightTriggerDeadZone){ //might not be needed
-			return 0.0;			
-		}
-		else{
-			return triggerValue;
-		}
+	public double axis(){
 		
+		}
 	}
-}

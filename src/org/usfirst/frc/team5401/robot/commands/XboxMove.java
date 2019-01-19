@@ -15,6 +15,10 @@ import edu.wpi.first.wpilibj.GenericHID.Hand;
 
 
 public class XboxMove extends Command {
+	//variables
+	double forwards;
+	double backwards;
+	
 	public XboxMove() {
 		requires(Robot.drivebase);
 	}
@@ -28,7 +32,7 @@ public class XboxMove extends Command {
 	// Called repeatedly when this Command is scheduled to run
 	@Override
 	protected void execute() {
-		
+		forwards = 
 		
 	}
 
